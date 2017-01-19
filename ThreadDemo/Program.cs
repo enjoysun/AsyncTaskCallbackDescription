@@ -16,7 +16,7 @@ namespace ThreadDemo
             Console.WriteLine("启动");
 
 
-            Thread t = new Thread(c =>
+            Thread t = new Thread(() =>
             {
                 using (FileStream fs = new FileStream(@"D:\我的mvc\C#异步\Synccallback\ThredDemo.txt", FileMode.OpenOrCreate, FileAccess.ReadWrite))
                 {
